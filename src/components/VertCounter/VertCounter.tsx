@@ -8,11 +8,11 @@ interface VertCounterProps {
     timerElapsed?: () => void;
 }
 
-const VertCounter: FC<VertCounterProps> = ({ current, total, intervalDuration = 3000, timerElapsed = () => { } }: VertCounterProps) => {
+const VertCounter: FC<VertCounterProps> = ({ current, total, intervalDuration = 5000, timerElapsed = () => { } }: VertCounterProps) => {
     const progressEl: any = useRef();
     const lower = Math.min(current, total);
     useEffect(() => {
-        progressEl.current.style.transform = `scaleY(${lower / total})`;
+        progressEl.current.style.setProperty('--slider-duration', `${intervalDuration}ms`);
     })
     useEffect(() => {
         const interval = setInterval(() => {

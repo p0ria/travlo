@@ -14,15 +14,28 @@
         overflow: hidden;
 
         &__value {
+            --slider-duration: 5000ms;
             position: absolute;
             top: 0;
             left: 0;
             width: inherit;
             height: 100%;
-            background-color: white;
-            transform: scaleY(0);
+            background-color: rgba(255, 255, 255, 0.8);
             transform-origin: top;
             transition: transform 300ms;
+            animation-name: slider-animation;
+            animation-duration: var(--slider-duration);
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
+    }
+}
+
+@keyframes slider-animation {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
     }
 }
