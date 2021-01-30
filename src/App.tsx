@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react';
+import { BiChevronRight } from 'react-icons/bi';
 
 import './App.scss';
 import { tripImages } from './common/constants';
@@ -19,7 +20,8 @@ function App() {
       </div>
       <AppFooterLeft />
       <div className="App__footer-right">
-
+        Booking Now
+        <BiChevronRight className="icon" />
       </div>
     </div>
   );
