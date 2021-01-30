@@ -14,3 +14,9 @@ export const footerMenuItems = [
     { title: 'shopping', icon: BiShoppingBag, subTitle: 'tehran', date: 'AUG 2020' },
     { title: 'gym', icon: BiDumbbell, subTitle: 'isfahan', date: 'AUG 2020' },
 ]
+
+export const tripImages = [
+    'assets/images/trips/1.jpg',
+    'assets/images/trips/2.jpg',
+    'assets/images/trips/3.jpg'
+]

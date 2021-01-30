@@ -1,0 +1,47 @@
+.Trip {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #0f2b3d, $alpha: 0.2);
+    }
+
+    &__texts,
+    &__btn {
+        position: absolute;
+    }
+
+    &__texts {
+        bottom: 10px;
+        left: 10px;
+
+        .title {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .sub-title {
+            color: var(--color-sub-text);
+            font-size: 1.2rem;
+            margin-top: -5px;
+        }
+    }
+
+    &__btn {
+        bottom: 20px;
+        right: 20px;
+        font-size: 2rem;
+        border: 1px solid white;
+        display: flex;
+        padding: 5px;
+        cursor: pointer;
+    }
+}
