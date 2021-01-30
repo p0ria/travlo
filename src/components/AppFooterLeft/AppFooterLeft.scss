@@ -1,0 +1,36 @@
+.AppFooterLeft {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    &__cto {
+        flex: 0 0 130px;
+        padding: 10px 20px;
+
+        .cto__title {
+            span {
+                font-size: 2rem;
+                margin-right: 15px;
+                text-transform: uppercase;
+            }
+
+            .icon {
+                color: var(--color-sub-text);
+                font-size: 1.1rem;
+            }
+        }
+
+        .cto__sub-title {
+            color: var(--color-sub-text);
+            margin-top: -2px;
+            line-height: 1rem;
+        }
+    }
+
+    &__menu {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+}

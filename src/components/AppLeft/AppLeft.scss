@@ -1,0 +1,19 @@
+.AppLeft {
+    position: relative;
+    background-image: linear-gradient(to bottom, #212837, transparent 200px);
+
+    .Slider {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .VertCounter {
+        position: absolute;
+        top: 250px;
+        left: 20px;
+    }
+}

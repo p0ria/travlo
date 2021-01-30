@@ -1,0 +1,21 @@
+@import "../../assets/scss/mixins";
+
+.TopNav {
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    @include dontHighlight;
+
+    &__logo {
+        font-family: "Spectral SC";
+    }
+
+    &__langs {
+        display: flex;
+
+        .lang {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+}

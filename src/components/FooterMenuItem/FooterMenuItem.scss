@@ -1,0 +1,32 @@
+.FooterMenuItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__left {
+        font-size: 1.8rem;
+        margin-right: 20px;
+        color: #444;
+    }
+
+    &__right {
+        color: rgb(33, 61, 121);
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: -5px;
+        }
+
+        .sub-title,
+        .date {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    }
+}

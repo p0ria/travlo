@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@600&display=swap');
+
+:root {
+  --color-text: #ffffff;
+  --color-sub-text: #dfdfdf;
+}
 
 body {
   margin: 0;
@@ -7,5 +13,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
 }
 
